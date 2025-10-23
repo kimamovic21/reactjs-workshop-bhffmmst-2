@@ -8,6 +8,8 @@
  * - Making components reusable
  */
 
+import SafetCard from "../components/SafetCard";
+
 // A component that receives props
 function Greeting(props) {
   return (
@@ -80,6 +82,7 @@ function Step2_Props() {
           <h3>Try This:</h3>
           <p>Create your own Greeting or CourseCard with different props!</p>
           {/* Students can add their code here */}
+          <SafetCard title="1984." author="George Orwell" year={1918} />
         </div>
       </div>
     </div>

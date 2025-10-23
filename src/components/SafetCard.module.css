@@ -1,0 +1,24 @@
+.safetCard {
+  background: #2d3748;
+  border: 2px solid #3a7cef;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.safetCard:hover {
+  border-color: #718096;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.safetCard h3 {
+  color: #f7fafc;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.safetCard p {
+  color: #cbd5e0;
+  margin: 5px 0;
+}

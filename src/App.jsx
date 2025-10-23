@@ -9,6 +9,7 @@ import Step4_Lists from './steps/Step4_Lists'
 import Step5_State from './steps/Step5_State'
 import Step6_Events from './steps/Step6_Events'
 import Step7_FinalProject from './steps/Step7_FinalProject'
+import StepComponent from './components/StepComponent'
 
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -35,14 +36,11 @@ function App() {
       <nav className="step-navigation">
         <div className="step-buttons">
           {steps.map(step => (
-            <button
-              key={step.number}
-              className={`step-btn ${currentStep === step.number ? 'active' : ''} ${currentStep > step.number ? 'completed' : ''}`}
-              onClick={() => setCurrentStep(step.number)}
-            >
-              <span className="step-number">{step.number}</span>
-              <span className="step-title">{step.title}</span>
-            </button>
+            <StepComponent
+              step={step}
+              currentStep={currentStep}
+              setCurrentStep={setCurrentStep}
+            />
           ))}
         </div>
       </nav>

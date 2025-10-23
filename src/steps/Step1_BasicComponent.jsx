@@ -8,6 +8,8 @@
  * - Returning JSX from a component
  */
 
+import Heading from "../components/Heading";
+
 // This is a React component - a function that returns JSX
 function Step1_BasicComponent() {
   // JSX looks like HTML, but it's actually JavaScript!
@@ -44,6 +46,8 @@ function Step1_BasicComponent() {
           <h3>Try This:</h3>
           <p>Add your own heading or paragraph below this text!</p>
           {/* Students can add their code here */}
+          <p>Super, odradili smo ovaj zadatak</p>
+          <Heading />
         </div>
       </div>
     </div>
